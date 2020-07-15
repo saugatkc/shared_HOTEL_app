@@ -1,0 +1,2 @@
+include ':app', ':bag_packer'
+rootProject.name='BagPacker'

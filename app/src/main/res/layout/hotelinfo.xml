@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/rvHotelGallery"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvhdHotelname"
+            android:textStyle="bold"
+            android:orientation="horizontal"
+            android:text="Hotel Prince Plaza"
+            android:textSize="25dp"
+            android:textAllCaps="true"
+            android:layout_marginLeft="30dp"/>
+
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imghotelMap"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/map"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvhdCity"
+                android:text="City"
+                android:textSize="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/imghotelMap"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvhdDistrict"
+                android:text="District"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tvhdCity"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvhdPhone"
+                android:textSize="15dp"
+                android:text="phone"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@id/imghotelMap"
+                android:layout_below="@+id/tvhdCity"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvhdEmail"
+                android:textSize="15dp"
+                android:text="Email"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@id/imghotelMap"
+                android:layout_below="@+id/tvhdPhone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/features"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="Features"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/features"
+                android:layout_marginTop="5dp"
+                android:id="@+id/rvHotelFeatures"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="checkIn"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/tvckin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="checkOut"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/etcheckin"
+                android:id="@+id/tvchkout"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/etcheckin"
+                android:layout_below="@+id/tvckin"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/etcheckout"
+                android:layout_below="@+id/tvchkout"
+                android:layout_toRightOf="@+id/etcheckin"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvshowprice"
+                android:layout_marginLeft="10dp"
+                android:text="Price Per Room"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NRP"
+                android:layout_toRightOf="@+id/tvshowprice"
+                android:layout_marginLeft="170dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvhdPrice"
+                android:text="price"
+                android:layout_toRightOf="@+id/tvshowprice"
+                android:layout_marginLeft="200dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(PN)"
+                android:layout_toRightOf="@+id/tvhdPrice"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBook"
+                android:layout_marginLeft="15dp"
+                android:text="Book this"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSave"
+                android:layout_marginLeft="155dp"
+                android:layout_toRightOf="@+id/btnBook"
+                android:text="Save hotel"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    </ScrollView>
+

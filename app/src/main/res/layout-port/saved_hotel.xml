@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        msung<de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/noimage"
+        android:id="@+id/imgHotelImg"
+        android:layout_width="80dp"
+        android:layout_height="60dp"/>
+
+        <TextView
+            android:id="@+id/tvHotelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saugat Kc "
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgHotelImg" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="55pt"
+        android:id="@+id/imghotel"
+        android:src="@drawable/front"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/tvCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CIty,"
+                android:layout_marginLeft="25dp"/>
+            <TextView
+                android:id="@+id/tvDistrict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="District"
+                android:layout_toRightOf="@+id/tvCity"/>
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rooms available"
+                android:layout_below="@+id/tvCity"
+                android:layout_marginLeft="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAvailable"
+                android:text="available"
+                android:layout_toRightOf="@id/tvPrice"
+                android:layout_below="@id/tvCity"
+                android:layout_marginLeft="5dp"/>
+        </RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRemove"
+            android:layout_toRightOf="@+id/rl1"
+            android:text="Remove"/>
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="VIEW HOTEL"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/rl1"/>
+    </RelativeLayout>
+
+</LinearLayout>

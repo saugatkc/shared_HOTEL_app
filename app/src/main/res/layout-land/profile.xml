@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    msung<de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center"
+        android:src="@drawable/noimage"
+        android:id="@+id/imgProfileImg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"/>
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/tvfullname"
+        android:text=" Full Name: " />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/tvfname"
+        android:layout_toRightOf="@+id/tvfullname"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/tvusername"
+            android:text="User Name: " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/tvuname"
+            android:layout_toRightOf="@+id/tvusername"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/tvphone"
+            android:text="Phone: " />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/etphn"
+            android:text="phone"
+            android:layout_toRightOf="@+id/tvphone"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/tvemail"
+            android:text="Email: " />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/eteml"
+            android:text="Email"
+            android:layout_toRightOf="@+id/tvemail"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnProfUpdate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Update Details"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/roundedbutton"
+        android:text="LOGOUT"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
+</ScrollView>
